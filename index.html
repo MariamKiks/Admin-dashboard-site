@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster Dashboard</title>
+    <meta
+      name="description"
+      content="Premium admin dashboard with analytics, transactions, and recent activity."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="brand-wrap">
+          <div class="brand-mark">A</div>
+          <div class="brand-copy">
+            <span class="brand-name">Aster</span>
+            <span class="brand-subtitle">Operations Suite</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <ul>
+            <li class="nav-item active">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+                <span>Overview</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-chart-pie"></i></span>
+                <span>Analytics</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-user-group"></i></span>
+                <span>Users Management</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-box-open"></i></span>
+                <span>Products</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span>Orders</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+                <span>Transactions</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-message"></i></span>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-bell"></i></span>
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-file-lines"></i></span>
+                <span>Reports</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <span class="nav-icon"><i class="fa-solid fa-circle-question"></i></span>
+                <span>Help &amp; Support</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user-card">
+          <div class="user-avatar">SA</div>
+          <div class="user-copy">
+            <strong>Sofia Anderson</strong>
+            <small>Admin</small>
+          </div>
+          <button class="profile-menu" aria-label="Open profile options">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div>
+              <div class="breadcrumbs">Dashboard <span>/ Overview</span></div>
+              <h1>Overview</h1>
+            </div>
+          </div>
+
+          <div class="topbar-actions">
+            <label class="search-box" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search" aria-label="Search dashboard" />
+            </label>
+
+            <button class="icon-button accent" aria-label="Notifications">
+              <i class="fa-solid fa-bell"></i>
+              <span class="notification-badge">4</span>
+            </button>
+
+            <button class="icon-button" aria-label="Messages">
+              <i class="fa-solid fa-comment-dots"></i>
+              <span class="notification-badge subtle">2</span>
+            </button>
+
+            <button class="icon-button theme" aria-label="Toggle theme">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </button>
+
+            <div class="profile-pill" aria-label="User profile">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                alt="Olivia Grant profile"
+              />
+              <div class="profile-meta">
+                <strong>Olivia Grant</strong>
+                <small>Administrator</small>
+              </div>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <section class="welcome-banner" aria-label="Welcome banner">
+          <div>
+            <p class="eyebrow">Performance snapshot</p>
+            <h2>Good morning, Admin.</h2>
+            <p>Here's what's happening with your business today.</p>
+          </div>
+          <div class="banner-actions">
+            <button class="ghost-btn">Export report</button>
+            <button class="primary-btn">New dashboard</button>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Key metrics">
+          <article class="stat-card">
+            <div class="card-header">
+              <span class="stat-icon purple"><i class="fa-solid fa-dollar-sign"></i></span>
+              <span class="trend up">+12.4%</span>
+            </div>
+            <div class="card-body">
+              <p>Total Revenue</p>
+              <h3>$284,540</h3>
+              <small>vs last month $252,100</small>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="card-header">
+              <span class="stat-icon blue"><i class="fa-solid fa-users"></i></span>
+              <span class="trend up">+8.1%</span>
+            </div>
+            <div class="card-body">
+              <p>Total Users</p>
+              <h3>24,830</h3>
+              <small>vs last month 22,940</small>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="card-header">
+              <span class="stat-icon green"><i class="fa-solid fa-cart-shopping"></i></span>
+              <span class="trend up">+5.7%</span>
+            </div>
+            <div class="card-body">
+              <p>Total Orders</p>
+              <h3>8,416</h3>
+              <small>vs last month 7,960</small>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="card-header">
+              <span class="stat-icon orange"><i class="fa-solid fa-chart-line"></i></span>
+              <span class="trend down">-1.3%</span>
+            </div>
+            <div class="card-body">
+              <p>Conversion Rate</p>
+              <h3>4.82%</h3>
+              <small>vs last month 4.89%</small>
+            </div>
+          </article>
+        </section>
+
+        <section class="analytics-grid" aria-label="Analytics overview">
+          <article class="panel revenue-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Revenue overview</p>
+                <h3>$342.8K</h3>
+              </div>
+              <div class="segmented-control" aria-label="Date filter">
+                <button class="active">Monthly</button>
+                <button>Quarterly</button>
+                <button>Yearly</button>
+              </div>
+            </div>
+
+            <div class="chart-bars" aria-label="Monthly revenue chart">
+              <div class="bar-group"><span class="bar" style="--height: 42%"></span><label>Jan</label></div>
+              <div class="bar-group"><span class="bar" style="--height: 50%"></span><label>Feb</label></div>
+              <div class="bar-group"><span class="bar" style="--height: 38%"></span><label>Mar</label></div>
+              <div class="bar-group"><span class="bar" style="--height: 68%"></span><label>Apr</label></div>
+              <div class="bar-group"><span class="bar" style="--height: 57%"></span><label>May</label></div>
+              <div class="bar-group"><span class="bar" style="--height: 76%"></span><label>Jun</label></div>
+              <div class="bar-group"><span class="bar" style="--height: 60%"></span><label>Jul</label></div>
+              <div class="bar-group"><span class="bar" style="--height: 85%"></span><label>Aug</label></div>
+            </div>
+          </article>
+
+          <article class="panel performance-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Customer insights</p>
+                <h3>72.4%</h3>
+              </div>
+              <span class="trend up">+4.8%</span>
+            </div>
+
+            <div class="mini-visual">
+              <div class="donut-chart">
+                <div class="donut-inner">
+                  <strong>72%</strong>
+                  <span>Retention</span>
+                </div>
+              </div>
+
+              <div class="metric-list">
+                <div class="metric-row">
+                  <span class="legend purple"></span>
+                  <span>Returning</span>
+                  <strong>54%</strong>
+                </div>
+                <div class="metric-row">
+                  <span class="legend cyan"></span>
+                  <span>New</span>
+                  <strong>18%</strong>
+                </div>
+                <div class="metric-row">
+                  <span class="legend violet"></span>
+                  <span>VIP</span>
+                  <strong>12%</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid" aria-label="Tables and activity">
+          <article class="panel transactions-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Recent transactions</p>
+                <h3>Payments</h3>
+              </div>
+              <button class="panel-link">View all</button>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Transaction ID</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Method</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#TXN-1024</td>
+                    <td>Emma Harper</td>
+                    <td>24 Aug 2026</td>
+                    <td>$2,540.00</td>
+                    <td>Visa •••• 7321</td>
+                    <td><span class="status success">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td>#TXN-1023</td>
+                    <td>Daniel Kim</td>
+                    <td>23 Aug 2026</td>
+                    <td>$1,120.00</td>
+                    <td>PayPal</td>
+                    <td><span class="status pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>#TXN-1022</td>
+                    <td>Lucia Gomez</td>
+                    <td>22 Aug 2026</td>
+                    <td>$799.00</td>
+                    <td>Mastercard •••• 4412</td>
+                    <td><span class="status failed">Failed</span></td>
+                  </tr>
+                  <tr>
+                    <td>#TXN-1021</td>
+                    <td>Marcus Hill</td>
+                    <td>21 Aug 2026</td>
+                    <td>$4,230.00</td>
+                    <td>Bank Transfer</td>
+                    <td><span class="status success">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td>#TXN-1020</td>
+                    <td>Alicia Brown</td>
+                    <td>20 Aug 2026</td>
+                    <td>$560.00</td>
+                    <td>Stripe</td>
+                    <td><span class="status pending">Pending</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel activities-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Recent activity</p>
+                <h3>Updates</h3>
+              </div>
+            </div>
+
+            <ul class="timeline" aria-label="Recent activity timeline">
+              <li class="timeline-item">
+                <span class="dot success"></span>
+                <div>
+                  <strong>New user registration</strong>
+                  <p>12 new customers joined the platform today.</p>
+                  <time>12 minutes ago</time>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <span class="dot purple"></span>
+                <div>
+                  <strong>Recent purchase</strong>
+                  <p>Enterprise plan upgrade completed by Northstar Labs.</p>
+                  <time>46 minutes ago</time>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <span class="dot cyan"></span>
+                <div>
+                  <strong>Payment confirmation</strong>
+                  <p>Invoice #INV-2119 received and marked paid.</p>
+                  <time>1 hour ago</time>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <span class="dot warning"></span>
+                <div>
+                  <strong>Account update</strong>
+                  <p>Security settings were refreshed for 3 admin accounts.</p>
+                  <time>3 hours ago</time>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="panel quick-actions-panel" aria-label="Quick actions">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Quick actions</p>
+              <h3>Take action</h3>
+            </div>
+          </div>
+
+          <div class="action-grid">
+            <article class="action-card">
+              <span class="action-icon purple"><i class="fa-solid fa-user-plus"></i></span>
+              <div>
+                <h4>Add New User</h4>
+                <p>Create a new team member onboarding flow.</p>
+              </div>
+            </article>
+            <article class="action-card">
+              <span class="action-icon blue"><i class="fa-solid fa-file-export"></i></span>
+              <div>
+                <h4>Create Report</h4>
+                <p>Generate a concise executive update for stakeholders.</p>
+              </div>
+            </article>
+            <article class="action-card">
+              <span class="action-icon green"><i class="fa-solid fa-boxes-stacked"></i></span>
+              <div>
+                <h4>Manage Products</h4>
+                <p>Review inventory, add variants, and refresh pricing.</p>
+              </div>
+            </article>
+            <article class="action-card">
+              <span class="action-icon orange"><i class="fa-solid fa-chart-column"></i></span>
+              <div>
+                <h4>View Analytics</h4>
+                <p>Inspect campaign outcome and funnel conversion data.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const appShell = document.querySelector('.app-shell');
+
+      if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+          appShell.classList.toggle('sidebar-open');
+        });
+      }
+    </script>
+  </body>
+</html>
